@@ -1,0 +1,107 @@
+/*********************************************************************
+                                BASE
+*/
+    *{ box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; }
+    a{ color: #000; text-decoration: none; margin: 0; padding: 0; }
+    ul, ol{ padding: 0; margin: 0; list-style-type: none; }
+    html{ height: 100%; margin: 0; padding: 0; }
+    body{ height: 100%; margin: 0; padding: 0; position: relative; }
+
+/*********************************************************************
+                                BASIC LAYOUTS
+*/
+    .float-left{ float: left; margin-right: 10px; max-width: 50%; height: auto; }
+    .float-right{ float: right; margin-left: 10px; max-width: 50%; height: auto; }
+    .float-clear:before{ content: "."; display:block; clear:both; visibility:hidden; height: 0; padding: 0;}
+
+    .inline-block{ display: inline-block; margin-right: -4px; }
+
+    .col-one-half{ width: 48%; float: left; margin: 0 1%; }
+    .col-one-third { width: calc(100%/3 -  2%); float: left; margin: 0 1%; }
+    .col-two-third { width: calc(100%/1.5 -  2%); float: left; margin: 0 1%; }
+
+    .img-rounded { border-radius: 50%; margin: 10px;}
+
+/*****************************************************
+GLOBAL
+*/
+#home, #game, body, html{
+	height: 100%;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	text-align: center;
+	background-size: cover;
+}
+main{
+	background-image: url(../ressources/img/bg-game.jpg);
+}
+#home, #game{
+	padding: 40px;
+}
+
+/*********************************************************************
+                                HOME PAGE
+*/
+#home{
+	background-image: url(../img/hand2.jpg);
+}
+#home p {
+	font-family: 'Indie Flower', cursive;
+	font-size: 30px;
+	margin: 0;
+	padding: 50px;
+}
+#home input {
+	background-color: black;
+	color:#A42919;
+}
+#home h1 {
+	font-family: 'Creepster', cursive;
+	font-size: 50px;
+	color: #A42919;
+
+}
+#home button {
+	font-size: 50px;
+	text-decoration: none;
+	font-family: 'Nosifer', cursive;
+	color: #8C0813;
+	border: 3px solid #8C0813;
+	background-color: #000000;
+	padding: 10 15px;
+	border-radius: 10px;
+	display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+	
+}
+#home  img {
+	width: 400px;
+	margin-top: ;
+
+}
+
+/*********************************************************************
+                                GAME PAGE
+*/
+
+#game img{
+	display: block;
+	height: 400px;
+	width: auto;
+	margin: 40px auto;
+}
+#game  p{
+	width: 90%;
+	margin: 40px auto;
+	text-align: center
+}
+#game #choix{
+	text-align: center;
+}
+#game nav{
+	position: fixed;
+	top: 0;
+	right: 0;
+}
